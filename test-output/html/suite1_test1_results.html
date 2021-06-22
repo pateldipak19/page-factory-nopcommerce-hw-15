@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="">
+<head>
+  <title>Test Results Report - Sanity Test</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="description" content="TestNG unit test results." />
+  <link href="reportng.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="reportng.js"></script>
+</head>
+<body>
+<h1>Sanity Test</h1>
+<p>
+  Test duration: 51.842s
+</p>
+
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">com.nopcommerce.demo.testsuite.LoginTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  verifyUserShouldNotLoginSuccessfullyWithInvalidCredentials
+      </td>
+  <td class="duration">
+    6.429s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Clicking on login tab element [[ChromeDriver: chrome on WINDOWS (63fbc397d89bda009ddbed2052c67320)] -> xpath: //a[contains(text(),'Log in')]]<br>
+                                Navigate to register page and verify navigated page welcome text [[ChromeDriver: chrome on WINDOWS (63fbc397d89bda009ddbed2052c67320)] -> xpath: //h1[contains(text(),'Welcome, Please Sign In!')]]<br>
+                                Entering email address : d129@ymail.com to email field : [[ChromeDriver: chrome on WINDOWS (63fbc397d89bda009ddbed2052c67320)] -> xpath: //input[@id='Email']]<br>
+                                Entering password : 123456 to password field : [[ChromeDriver: chrome on WINDOWS (63fbc397d89bda009ddbed2052c67320)] -> xpath: //input[@id='Password']]<br>
+                                Clicking on login button [[ChromeDriver: chrome on WINDOWS (63fbc397d89bda009ddbed2052c67320)] -> xpath: //button[contains(text(),'Log in')]]<br>
+                                Getting invalid credentials error message [[ChromeDriver: chrome on WINDOWS (63fbc397d89bda009ddbed2052c67320)] -> xpath: //div[@class='message-error validation-summary-errors']]<br>
+                                Click to see screenshot
+                                <a target = "_blank" href=C:\Users\conta\IdeaProjects\page-factory-nopcommerce-homework15/test-output/html/verifyUserShouldNotLoginSuccessfullyWithInvalidCredentialsTue_Jun_22_10_41_51_BST_2021.jpg>Screenshot</a>
+                                <br>
+                                <br>
+                                <a target = "_blank" href=C:\Users\conta\IdeaProjects\page-factory-nopcommerce-homework15/test-output/html/verifyUserShouldNotLoginSuccessfullyWithInvalidCredentialsTue_Jun_22_10_41_51_BST_2021.jpg><img src=C:\Users\conta\IdeaProjects\page-factory-nopcommerce-homework15/test-output/html/verifyUserShouldNotLoginSuccessfullyWithInvalidCredentialsTue_Jun_22_10_41_51_BST_2021.jpg height=200 width=200></img></a>
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError: The following asserts failed:<br/>
+	expected [Login was unsuccessful. Please correct the errors and try again.<br/>
+No customer account found] but found [Login was unsuccessful. Please correct the errors and try again.]</b></a><br />
+    <div class="stackTrace" id="exception-0">
+              org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)<br />
+              com.nopcommerce.demo.testsuite.LoginTest.verifyUserShouldNotLoginSuccessfullyWithInvalidCredentials(LoginTest.java:79)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:498)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:583)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:648)<br />
+              org.testng.TestRunner.run(TestRunner.java:505)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:455)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:364)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1137)<br />
+              org.testng.TestNG.runSuites(TestNG.java:1049)<br />
+              org.testng.TestNG.run(TestNG.java:1017)<br />
+              com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)<br />
+              com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)<br />
+                </div>
+      </td>
+</tr>
+      </table>
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">com.nopcommerce.demo.testsuite.ComputerTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  verifyUserAbleToNavigateToComputersSubMenuProductNotebooksPageSuccessfully
+      </td>
+  <td class="duration">
+    2.489s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Clicking on computer tab element [[ChromeDriver: chrome on WINDOWS (fe2815cb7f8a0475c6fe5e4bb299a825)] -> xpath: (//a[@href='/computers'])[1]]<br>
+                                Clicking on computers drop down menu Notebooks element [[ChromeDriver: chrome on WINDOWS (fe2815cb7f8a0475c6fe5e4bb299a825)] -> xpath: //body/div[6]/div[2]/ul[1]/li[1]/ul[1]/li[2]/a[1]]<br>
+                                Navigate to notebooks page and verify navigated page welcome text [[ChromeDriver: chrome on WINDOWS (fe2815cb7f8a0475c6fe5e4bb299a825)] -> xpath: //h1[contains(text(),'Notebooks')]]<br>
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  verifyUserAbleToNavigateToComputersSubMenuProductSoftwarePageSuccessfully
+      </td>
+  <td class="duration">
+    2.368s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Clicking on computer tab element [[ChromeDriver: chrome on WINDOWS (597ad8a7f2dcefc217ead22c295ad77b)] -> xpath: (//a[@href='/computers'])[1]]<br>
+                                Clicking on computers drop down menu Software element [[ChromeDriver: chrome on WINDOWS (597ad8a7f2dcefc217ead22c295ad77b)] -> xpath: //body/div[6]/div[2]/ul[1]/li[1]/ul[1]/li[3]/a[1]]<br>
+                                Navigate to Software page and verify navigated page welcome text [[ChromeDriver: chrome on WINDOWS (597ad8a7f2dcefc217ead22c295ad77b)] -> xpath: //h1[contains(text(),'Software')]]<br>
+                  </div>
+    
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">com.nopcommerce.demo.testsuite.LoginTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  verifyUserShouldLoginSuccessfullyWithValidCredentials
+      </td>
+  <td class="duration">
+    5.485s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Clicking on login tab element [[ChromeDriver: chrome on WINDOWS (c536f91fcdb4e91b9a75c8b8f66b7864)] -> xpath: //a[contains(text(),'Log in')]]<br>
+                                Navigate to register page and verify navigated page welcome text [[ChromeDriver: chrome on WINDOWS (c536f91fcdb4e91b9a75c8b8f66b7864)] -> xpath: //h1[contains(text(),'Welcome, Please Sign In!')]]<br>
+                                Entering email address : dip129@ymail.com to email field : [[ChromeDriver: chrome on WINDOWS (c536f91fcdb4e91b9a75c8b8f66b7864)] -> xpath: //input[@id='Email']]<br>
+                                Entering password : 123456 to password field : [[ChromeDriver: chrome on WINDOWS (c536f91fcdb4e91b9a75c8b8f66b7864)] -> xpath: //input[@id='Password']]<br>
+                                Clicking on login button [[ChromeDriver: chrome on WINDOWS (c536f91fcdb4e91b9a75c8b8f66b7864)] -> xpath: //button[contains(text(),'Log in')]]<br>
+                  </div>
+    
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">com.nopcommerce.demo.testsuite.RegistrationTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  verifyUserShouldAbleToRegisterWithValidInputInAllMandatoryFields
+      </td>
+  <td class="duration">
+    17.783s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Clicking on register tab element [[ChromeDriver: chrome on WINDOWS (40649f5649445b70db19ed9df7321870)] -> xpath: //a[contains(text(),'Register')]]<br>
+                                Navigate to register page and verify navigated page welcome text [[ChromeDriver: chrome on WINDOWS (40649f5649445b70db19ed9df7321870)] -> xpath: //h1[contains(text(),'Register')]]<br>
+                                Entering first name : Dipak to first name field : [[ChromeDriver: chrome on WINDOWS (40649f5649445b70db19ed9df7321870)] -> xpath: //input[@id='FirstName']]<br>
+                                Entering last name : Patel to last name field : [[ChromeDriver: chrome on WINDOWS (40649f5649445b70db19ed9df7321870)] -> xpath: //input[@id='LastName']]<br>
+                                Entering email address : dipak435@ymail.com to email field : [[ChromeDriver: chrome on WINDOWS (40649f5649445b70db19ed9df7321870)] -> xpath: //input[@id='Email']]<br>
+                                Entering password : xyz123456789 to password field : [[ChromeDriver: chrome on WINDOWS (40649f5649445b70db19ed9df7321870)] -> xpath: //input[@id='Password']]<br>
+                                Entering confirm password : xyz123456789 to confirm password field : [[ChromeDriver: chrome on WINDOWS (40649f5649445b70db19ed9df7321870)] -> xpath: //input[@id='ConfirmPassword']]<br>
+                                Clicking on register button [[ChromeDriver: chrome on WINDOWS (40649f5649445b70db19ed9df7321870)] -> xpath: //button[@id='register-button']]<br>
+                                Getting registration completed message [[ChromeDriver: chrome on WINDOWS (40649f5649445b70db19ed9df7321870)] -> xpath: //div[contains(text(),'Your registration completed')]]<br>
+                  </div>
+    
+
+      </td>
+</tr>
+      </table>
+  
+</body>
+</html>

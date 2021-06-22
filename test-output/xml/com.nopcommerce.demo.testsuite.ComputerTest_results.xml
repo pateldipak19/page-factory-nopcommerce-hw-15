@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Sanity Test"
+           tests="2"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="4.857">
+  <properties />
+  
+  
+            <testcase name="verifyUserAbleToNavigateToComputersSubMenuProductSoftwarePageSuccessfully" time="2.368" classname="com.nopcommerce.demo.testsuite.ComputerTest" />
+                <testcase name="verifyUserAbleToNavigateToComputersSubMenuProductNotebooksPageSuccessfully" time="2.489" classname="com.nopcommerce.demo.testsuite.ComputerTest" />
+      
+</testsuite>
